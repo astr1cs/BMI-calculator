@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contents">
+        <h2>BMI Calculator</h2>
+
+        <div class="inputGroup">
+          <label>Gender:</label>
+          <select id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+
+        <div class="inputGroup">
+          <label>Age:</label>
+          <input type="number" id="age" placeholder="Enter your age" required />
+        </div>
+
+        <div class="inputGroup">
+          <label>Height:</label>
+          <input type="number" id="height1" placeholder="Feet" required />
+          <input type="number" id="height2" placeholder="Inches" required />
+        </div>
+
+        <div class="inputGroup">
+          <label>Weight:</label>
+          <input
+            type="number"
+            id="weight"
+            placeholder="Enter Weight as KGs"
+            required
+          />
+        </div>
+        <button onclick="calculate()">Calculate BMI</button>
+
+        <div class="result"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
